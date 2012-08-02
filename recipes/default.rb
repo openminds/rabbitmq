@@ -46,7 +46,7 @@ when "debian", "ubuntu"
     components ["main"]
     key "http://www.rabbitmq.com/rabbitmq-signing-key-public.asc"
     action :add
-    notifies :run, resources(:execute => "apt-get update"), :immediately
+#    notifies :run, resources(:execute => "apt-get update"), :immediately
   end
 
   # installs the required setsid command -- should be there by default but just in case
