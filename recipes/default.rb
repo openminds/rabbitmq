@@ -19,7 +19,7 @@
 # limitations under the License.
 #
 
-include_recipe "erlang"
+package "erlang-nox"
 
 directory "/etc/rabbitmq/" do
   owner "root"
